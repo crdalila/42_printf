@@ -6,7 +6,7 @@
 /*   By: dalcabre <dalcabre@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 12:10:16 by dalcabre          #+#    #+#             */
-/*   Updated: 2024/02/06 13:45:03 by dalcabre         ###   ########.fr       */
+/*   Updated: 2024/02/13 16:51:06 by dalcabre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	ft_printf_char(char c)
 {
+	if (!c)
+		return (write(1, "\n", 1));
 	write(1, &c, 1);
 	return (1);
 }

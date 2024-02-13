@@ -6,7 +6,7 @@
 /*   By: dalcabre <dalcabre@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 11:36:06 by dalcabre          #+#    #+#             */
-/*   Updated: 2024/02/13 13:54:00 by dalcabre         ###   ########.fr       */
+/*   Updated: 2024/02/13 16:51:20 by dalcabre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	ft_printf(const char *str, ...)
 		return (0);
 	while (str[i])
 	{
-		if (str[i] == '%')
+		if (str[i] == '%' && str[i + 1])
 		{
 			count += ft_countcheck(arguments, str[i + 1]);
 			i++;
