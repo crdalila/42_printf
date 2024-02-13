@@ -2,7 +2,7 @@
 Reproducción del comportamiento de printf (libc) con estas conversiones: %i, %d, %c, %s, %p, %u, %x y %X.
 
 ## Contenido
-        - **MAKEFILE**
+        - ** MAKEFILE **
         - **ft_printf.h**
           -- Librería
         - **ft_printf.c**
